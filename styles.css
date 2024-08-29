@@ -165,7 +165,7 @@ div.welcome-banner {
     position: relative;
     background-color: black;
     background-image: url("clay.jpg");
-    background-position: 50% 50%;
+    background-position: 50% 45%;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     height: 350px;
