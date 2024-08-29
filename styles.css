@@ -1,0 +1,246 @@
+/* color pallete 1
+background      = #161b1
+page            = #1c2529
+text color      = #687F8B
+accent color    = #B2ADA2
+project card    = #0D1011
+*/
+
+/* color pallete 2
+background      = #161b1
+page            = #1c2529
+text color      = #687F8B
+accent color    = #B2ADA2
+project card    = #0D1011
+*/
+
+
+body {
+    background-color: #131316;
+}
+
+/* Icons */
+svg {
+    vertical-align: middle;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+
+/* Headings */
+h1 {
+    color: #B2ADA2;
+    font-size: 40px;
+    font-family: calibri;
+    letter-spacing: 2px;
+    font-weight: 800;
+    padding: 20px 0px 0px 30px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+/* Navigation Styles */
+div.menu {
+    background-color: #1c2529;
+    font-size: 0;
+}
+
+div.menu a {
+    display: inline-block;
+    margin: 0px;
+    padding: 15px 30px 10px 30px;
+    color: #B2ADA2;
+    font-size: 18px;
+    font-family: calibri;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-decoration: none;
+    -webkit-transition: all 0.40s ease;
+    transition: all 0.40s ease;
+}
+
+div.menu a:hover {
+    -webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+    background-color: #33444d;
+}
+
+
+/* Grid Styles */
+.grid-wrapper {
+    margin: 30px auto;
+    width: 1500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr);
+    grid-auto-rows: auto;
+    column-gap: 20px;
+    row-gap: 0px;
+    background-color: red;
+}
+
+.grid-menu {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.grid-header {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+.grid-body {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+
+/* content elements */
+div.section {
+    margin: 0px;
+    background-color: #1c2529;
+    height: auto;
+}
+
+div.section p {
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    font-family: calibri;
+    color: #B2ADA2;
+}
+
+
+/* project widgets */
+div.project {
+    position: relative;
+    display: inline-block;
+    background-color: #0D1011;
+    margin: 25px 20px 25px 30px;
+    width: 250px;
+    height: 325px;
+}
+
+div.project:hover {
+    background-color: black;
+}
+
+div.project h2 {
+    margin: 0px;
+    padding: 30px 30px 0px 30px;
+    color: #B2ADA2;
+    font-size: 30px;
+    font-family: calibri;
+}
+
+div.project p {
+    position: absolute;
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+    font-family: calibri;
+    color: #4A4742;
+}
+
+div.project a{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #B2ADA2;
+    font-size: 18px;
+    font-family: calibri;
+    font-weight: 300;
+}
+
+img.badge {
+    position: absolute;
+    bottom: -3%;
+    right: 2%;
+    z-index: 5;
+    width: 85px;
+    height: 85px;
+}
+
+
+/* welcome banner */
+div.welcome-banner {
+    position: relative;
+    background-color: black;
+    background-image: url("clay.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 350px;
+}
+
+p.welcome-name {
+    margin: 0px 0px 0px 10%;
+    padding-top: 5%;
+    color: white;
+    font-family: calibri;
+    font-weight: 800;
+    font-size: 70px;
+}
+
+p.welcome-subtext {
+    margin: 0px 0px 0px 10%;
+    color: white;
+    width: 50%;
+}
+
+div.welcome-button {
+    display: block;
+    margin-left: 10%;
+    width: 200px;
+}
+
+a.wtf {
+    display: inline-block;
+    margin: 20px 0px 0px 10%;
+    padding: 10px 30px 10px 30px;
+    color: black;
+    font-size: 18px;
+    font-family: calibri;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: #B2ADA2;
+}
+
+a.wtf:hover {
+    background-color: white;
+}
+
+img.profile {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+div.profile_background {
+    background-color: #131316;
+    display: inline-block;
+    position: absolute;
+    bottom: 13%;
+    right: 13%;
+    margin: 0px auto;
+    border-radius: 50%;
+    height: 275px;
+    width: 275px;
+}
+
+div.status {
+    background-color: #B2ADA2;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    height: 255px;
+    width: 255px;
+}
