@@ -1,19 +1,31 @@
+
+:root{
+    --background-color: #131316;
+    --page-bgcolor: #1c2529;
+    --collapsible-head: #171d21ff;
+    --collapsible-body: #0D1011;
+    --font-color: #B2ADA2;
+}
+
+
 /* color pallete
-background      = #131316
-page            = #1c2529
-text color      = #687F8B
-accent color    = #B2ADA2
-project card    = #0D1011
+:root{
+    --background-color: #1A1E1D;
+    --page-bgcolor: #232928;
+    --collapsible-head: #232928;
+    --collapsible-body: #000000;
+    --font-color: #9ea099;
+}
 */
 
 body {
-    background-color: #131316;
+    background-color: var(--background-color);
     margin: 0px;
 }
 
 /* Headings */
 h1 {
-    color: #B2ADA2;
+    color: var(--font-color);
     font-size: 30px;
     font-family: calibri;
     letter-spacing: 2px;
@@ -24,7 +36,7 @@ h1 {
 
 /* Headings */
 h3 {
-    color: #B2ADA2;
+    color: var(--font-color);
     font-size: 20px;
     font-family: calibri;
     letter-spacing: 2px;
@@ -36,7 +48,7 @@ h3 {
 
 /* Navigation Styles */
 div.menu {
-    background-color: #1c2529;
+    background-color: var(--page-bgcolor);
     font-size: 0;
     margin: 0px auto;
     text-align: center;
@@ -47,7 +59,7 @@ div.menu a {
     display: inline-block;
     margin: 0px;
     padding: 15px 25px 10px 25px;
-    color: #B2ADA2;
+    color: var(--font-color);
     font-size: 18px;
     font-family: calibri;
     letter-spacing: 1px;
@@ -60,7 +72,7 @@ div.menu a {
 div.menu a:hover {
     -webkit-transition: all 0.45s ease;
     transition: all 0.45s ease;
-    background-color: #33444d;
+    background-color: black;
 }
 
 
@@ -73,7 +85,7 @@ div.menu a:hover {
     grid-auto-rows: auto;
     column-gap: 20px;
     row-gap: 0px;
-    background-color: #1c2529;
+    background-color: var(--page-bgcolor);
 
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
@@ -116,7 +128,7 @@ div.menu a:hover {
 /* content elements */
 div.section {
     margin: 0px;
-    background-color: #1c2529;
+    background-color: var(--page-bgcolor);
     height: auto;
 }
 
@@ -168,12 +180,12 @@ a.wtf {
     display: inline-block;
     margin: 20px 0px 0px 10%;
     padding: 15px 30px 10px 20px;
-    color: black;
+    color: var(--background-color);
     font-size: 18px;
     font-family: calibri;
     font-weight: 300;
     text-decoration: none;
-    background-color: #B2ADA2;
+    background-color: var(--font-color);
 }
 
 a.wtf:hover {
@@ -184,6 +196,7 @@ svg {
     vertical-align: middle;
     padding-bottom: 5px;
     padding-right: 5px;
+    color: red;
 }
 
 
@@ -225,17 +238,13 @@ div.status {
     width: 255px;
 }
 
-/* Style the active link (or home/logo) */
-.active {
-    background-color: #04AA6D;
-    color: white;
-}
+
 
 /* collapsable containers */
 .collapsible {
-    background-color: #171d21ff;
+    background-color: var(--collapsible-head);
     font-weight: bold;
-    color: #B2ADA2;
+    color: var(--font-color);
     cursor: pointer;
     padding: 25px 30px 20px 30px;
     width: 100%;
@@ -245,21 +254,13 @@ div.status {
     font-size: 16px;
 }
 
-a.docLink{
-    color: white;
-}
-
-a.docLink:visited {
-    color: white;
-}
-
 .active, .collapsible:hover {
-    background-color: #171d21ff;
+    background-color: var(--collapsible-head);
 }
 
 .collapsible:after {
     content: '\002B';
-    color: #B2ADA2;
+    color: var(--font-color);
     font-weight: 500;
     font-size: 20px;
     float: right;
@@ -271,14 +272,22 @@ a.docLink:visited {
 }
 
 .content {
-    color: #B2ADA2;
+    color: var(--font-color);
     padding: 0 30px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #0D1011;
+    background-color: var(--collapsible-body);
 }
 
 .content p, li{
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a.docLink{
+    color: white;
+}
+
+a.docLink:visited {
+    color: white;
 }
