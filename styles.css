@@ -58,7 +58,7 @@ div.menu {
 div.menu a {
     display: inline-block;
     margin: 0px;
-    padding: 15px 25px 10px 25px;
+    padding: 10px 25px 10px 25px;
     color: var(--font-color);
     font-size: 18px;
     font-family: calibri;
@@ -104,8 +104,8 @@ div.menu a:hover {
             width: 80%;
     }
     /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-            width: 70%;
+    @media only screen and (min-width: 1400px) {
+            width: 60%;
     }
 }
 
@@ -133,15 +133,6 @@ div.section {
 }
 
 
-img.badge {
-    position: absolute;
-    bottom: -3%;
-    right: 2%;
-    z-index: 5;
-    width: 85px;
-    height: 85px;
-}
-
 
 /* welcome banner */
 div.welcome-banner {
@@ -150,12 +141,15 @@ div.welcome-banner {
     background-position: 50% 45%;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    height: 250px;
+    height: auto;
+    @media only screen and (min-width: 1800px) {
+            background-position: 40% 35%;
+    }
 }
 
 p.welcome-name {
     margin: 0px 0px 0px 10%;
-    padding-top: 5%;
+    padding-top: 40px;
     color: white;
     font-family: calibri;
     font-weight: 800;
@@ -168,18 +162,13 @@ p.welcome-subtext {
     width: 50%;
 }
 
-div.welcome-button {
-    display: block;
-    margin-left: 10%;
-    width: 200px;
-}
 
 
 /* Download Resume Button */
 a.wtf {
     display: inline-block;
-    margin: 20px 0px 0px 10%;
-    padding: 15px 30px 10px 20px;
+    margin: 20px 0px 40px 10%;
+    padding: 15px 30px 15px 20px;
     color: var(--background-color);
     font-size: 18px;
     font-family: calibri;
@@ -198,46 +187,6 @@ svg {
     padding-right: 5px;
     color: red;
 }
-
-
-/*
-img.profile {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-}
-
-div.profile_background {
-    background-color: #131316;
-    display: inline-block;
-    position: absolute;
-    bottom: 13%;
-    right: 13%;
-    margin: 0px auto;
-    border-radius: 50%;
-    height: 275px;
-    width: 275px;
-}
-
-div.status {
-    background-color: #B2ADA2;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 50%;
-    height: 255px;
-    width: 255px;
-}
-
 
 
 /* collapsable containers */

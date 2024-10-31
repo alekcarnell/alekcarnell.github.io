@@ -1,4 +1,4 @@
- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
     <head>
         <title>Alek Carnell | Resume</title>
@@ -7,9 +7,6 @@
     </head>
 
     <body>
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
         <!--Sections of the page-->
         <div class="grid-wrapper">
 
@@ -40,10 +37,8 @@
                     <h1>Knowledge and Experience</h1>
                     <button class="collapsible">Experience</button>
                     <div class="content">
-                        <p>6 years of experience working in Information Technology, covering a wide range of disciplines
-                            like networking, software development, hardware, operating systems and Audio/Video. I have learned
-                            not just how these technologies work, but how to work with, manage, and configure them to meet the needs
-                            of the customer as well as meet modern day security expectations.
+                        <p>6 years of experience in Information Technology, covering a wide range of disciplines
+                            including networking, hardware, operating systems, audio/video, and developement. Deeply invested in leveraging those disciplines from a security persepective to protect end users and business's from threats.
 
                             I have experience in:
                         <ul>
@@ -62,8 +57,8 @@
                     <div class="content">
                         <table width="100%" border="0" style="color: #B2ADA2; padding: 10px 0px 0px 0px;">
                             <tr>
-                                <td><h3>Cyber Security Tools</h3></td>
-
+                                <td><h3>Offensive Security</h3></td>
+                                <td><h3>Defensive Security</h3></td>
                                 <td><h3>Business and Communications Tools</h3></td>
                             </tr>
                             <tr>
@@ -77,6 +72,17 @@
                                           <li>Metasploit</li>
                                           <li>Hydra</li>
                                           <li>Nessus</li>
+                                      </ul>
+                                </td>
+                                <td>
+                                      <ul>
+                                          <li>Yubikey</li>
+                                          <li>Hashing and Encryption</li>
+                                          <li>VPN configuration</li>
+                                          <li>Authentication and MFA</li>
+                                          <li>Password managers and policies</li>
+                                          <li>Antivirus, SIEM, and IDS</li>
+                                          <li>Port Security</li>
                                       </ul>
                                 </td>
                                 <td>
@@ -98,20 +104,19 @@
                     <h1>Projects</h1>
                     <button class="collapsible">Proxmox VM Server</button>
                     <div class="content">
-                        <p>Virtualization server where many of the projects exist as VMs/Containers. Allows for quick deployment of new projects and a great test environment for new operating systems and software.</p>
+                        <p>Virtualization server where many of my projects exist as VMs/Containers. Allows for quick deployment of new projects and a great test environment for new operating systems and software.</p>
                         <img src="proxmox.png" height="auto" width="100%">
-                        <p>Documentation in progress</p>
                     </div>
 
                     <button class="collapsible">Synology | Multi-Functional Server</button>
                     <div class="content">
                         <p>My favorite device in my home network. My Synology DS918+ runs many services for all members of my network including file storage, PLEX, data backups, and VPN. RBAC and permissions are configured. The data is not encrypted at rest (yet), so the security policy informs users not to put anything too sensitive on here.</p>
-                        <p>Documentation in progress</p>
                     </div>
 
                     <button class="collapsible">Wazuh | SIEM & IDS</button>
                     <div class="content">
-                        <p>Wazuh is a free and open-source SIEM/IDS, while still having a ton of similar features to things like Splunk. Agent software installed on endpoints to forward logs to the server for analysis. For endpoints that don’t have an agent package, configured log forwarding to the Wazuh server.</p>
+                        <p>Wazuh is a free and open-source SIEM/IDS, while still being feature rich and comparable, in some ways, to enterprise-grade solutions like Splunk.
+                            Agent software is installed on endpoints to forward logs to the server for analysis. For endpoints that don’t have an agent package, configured log forwarding to the Wazuh server.</p>
                         <img src="wazuh-screen-1.png" height="auto" width="100%">
                         <p>Dashboard gives us an at-a-glance view of which endpoints are connected.</p>
                         <img src="wazuh-screen-2.png" height="auto" width="100%">
@@ -136,7 +141,7 @@
 
                     <button class="collapsible">Password Generator | Python</button>
                     <div class="content">
-                        <p>This is a program I wrote in Python which will generate any number of passwords at a desired length and complexity. The idea behind this isn't to necessarily produce extremely random or secure passwords, but rather to generate many "random-enough" passwords and building a rainbow table based off of those results to attempt to crack. It is interesting to see how much computational power is needed to attempt a brute-force, even when you know the algorithm or library used to generate the passwords. The program also checks for duplicates, which actually happen more often that I would have thought, even for basic randomness libraries, which illustrates the importance of entropy when creating secure passwords.</p>
+                        <p>This is a program I wrote in Python which will generate any number of passwords at a desired length and complexity. The idea behind this isn't to necessarily produce extremely random or secure passwords, but rather to generate many "random-enough" passwords and building a rainbow table based off of those results to attempt to crack. It is interesting to see how much computational power is needed to attempt a brute-force, even when you know the algorithm or library used to generate the passwords. The program also checks for duplicates, which actually happen more often than I would have thought, even for basic randomness libraries, which illustrates the importance of entropy when creating secure passwords.</p>
                         <p><a class="docLink" href="https://github.com/0xMrNobody/password_generation_tool/blob/main/passgentool.py" target="_blank">Source Code | Documenation</a></p>
                     </div>
 
@@ -146,7 +151,7 @@
                         <p><a class="docLink" href="https://github.com/0xMrNobody/Homelab-Documentation/blob/main/Personal%20and%20Home%20Network%20Cyber%20Security%20and%20Disaster%20Recovery%20Policy.md" target="_blank">Security Policy</a></p>
                     </div>
 
-                    <button class="collapsible">This Website </button>
+                    <button class="collapsible">CV Website</button>
                     <div class="content">
                         <p>This website is a simple web project with HTML, CSS, and a little JS. </p>
                         <p><a class="docLink" href="https://github.com/0xMrNobody/0xmrnobody.github.io" target="_blank">Source Code</a></p>
