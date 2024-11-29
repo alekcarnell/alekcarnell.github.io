@@ -1,22 +1,52 @@
+:root {
+    /* Colors */
+    --background-color: #20272a;
+    --body-text-color: white;
+    --collapsible-head: black;
+    --cards: black;
+    --accent-color: #36e58a;
 
-:root{
-    --background-color: #131316;
-    --page-bgcolor: #1c2529;
-    --collapsible-head: #171d21ff;
-    --collapsible-body: #0D1011;
-    --font-color: #B2ADA2;
+    /* Headings */
+    --header1: 3rem;
+    --header2: 2.5rem;
+    --header3: 2rem;
+    --header4: ;
+    --header5: ;
+
+    /* Body Text */
+    --14px: 0.875rem;
+    --15px: 0.9375rem;
+    --16px: 1rem;
+    --17px: 1.0625rem;
+    --18px: 1.125rem;
+    --19px: 1.1875rem;
+    --20px: 1.25rem;
+    --21px: 1.3125rem;
+
+    --readable-text: "Calibri";
+
+    /* Section Styles */
+    --sect-padding-LR: 20%;
+    @media only screen and (max-width: 360px) {
+        --sect-padding-LR: 1%;
+    }
+    @media only screen and (max-width: 640px) {
+        --sect-padding-LR: 1%;
+    }
+    @media only screen and (max-width: 1024px) {
+        --sect-padding-LR: 1%;
+    }
+    @media only screen and (max-width: 1280px) {
+        --sect-padding-LR: 2%;
+    }
+    @media only screen and (max-width: 1536px) {
+        --sect-padding-LR: 5%;
+    }
 }
 
-
-/* color pallete
-:root{
-    --background-color: #1A1E1D;
-    --page-bgcolor: #232928;
-    --collapsible-head: #232928;
-    --collapsible-body: #000000;
-    --font-color: #9ea099;
+html {
+    scroll-behavior: smooth;
 }
-*/
 
 body {
     background-color: var(--background-color);
@@ -24,49 +54,65 @@ body {
 }
 
 /* Headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--accent-color);
+    font-family: Impact;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 20px 20px 20px 20px;
+    margin: 0px 0px 0px 0px;
+}
+
 h1 {
-    color: var(--font-color);
-    font-size: 30px;
-    font-family: calibri;
-    letter-spacing: 2px;
-    font-weight: 800;
-    padding: 20px 0px 10px 30px;
-    margin: 0px 0px 0px 0px;
+    font-size: var(--header1);
 }
 
-/* Headings */
-h3 {
-    color: var(--font-color);
-    font-size: 20px;
-    font-family: calibri;
-    letter-spacing: 2px;
-    font-weight: 800;
-    padding: 20px 0px 10px 30px;
-    margin: 0px 0px 0px 0px;
+h2 {
+    font-size: var(--header2);
 }
 
+p {
+    color: var(--body-text-color);
+    font-size: var(--16px);
+    font-family: var(--readable-text);
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 0px;
+}
 
+i {
+    color: var(--body-text-color);
+    font-size: var(--18px);
+    font-family: var(--readable-text);
+    font-weight: bold;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 0px;
+}
+
+/*-------------------*/
 /* Navigation Styles */
+/*-------------------*/
 div.menu {
-    background-color: var(--page-bgcolor);
-    font-size: 0;
+    background-color: var(--background-color);
     margin: 0px auto;
     text-align: center;
 }
 
-
 div.menu a {
-    display: inline-block;
+    display: block;
     margin: 0px;
     padding: 10px 25px 10px 25px;
-    color: var(--font-color);
+    color: var(--body-text-color);
     font-size: 18px;
-    font-family: calibri;
+    font-family: var(--readable-text);
     letter-spacing: 1px;
     font-weight: 300;
     text-decoration: none;
-    -webkit-transition: all 0.40s ease;
-    transition: all 0.40s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 div.menu a:hover {
@@ -75,141 +121,28 @@ div.menu a:hover {
     background-color: black;
 }
 
-
-/* Grid Styles */
-.grid-wrapper {
-    margin: 0px auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr);
-    grid-auto-rows: auto;
-    column-gap: 20px;
-    row-gap: 0px;
-    background-color: var(--page-bgcolor);
-
-    /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {
-            width: 100%;
-    }
-    /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 600px) {
-            width: 100%;
-    }
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-            width: 80%;
-    }
-    /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {
-            width: 80%;
-    }
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1400px) {
-            width: 60%;
-    }
-}
-
-.grid-menu {
-    grid-column: 1 / 3;
-    grid-row: 1;
-}
-
-.grid-header {
-    grid-column: 1 / 3;
-    grid-row: 2;
-}
-
-.grid-body {
-    grid-column: 1 / 3;
-    grid-row: 3;
-}
-
-
-/* content elements */
-div.section {
-    margin: 0px;
-    background-color: var(--page-bgcolor);
-    height: auto;
-}
-
-
-
-/* welcome banner */
-div.welcome-banner {
-    position: relative;
-    background-image: url("clay.jpg");
-    background-position: 50% 45%;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    height: auto;
-    @media only screen and (min-width: 1800px) {
-            background-position: 40% 35%;
-    }
-}
-
-p.welcome-name {
-    margin: 0px 0px 0px 10%;
-    padding-top: 40px;
-    color: white;
-    font-family: calibri;
-    font-weight: 800;
-    font-size: 42px;
-}
-
-p.welcome-subtext {
-    margin: 0px 0px 0px 10%;
-    color: white;
-    width: 50%;
-}
-
-
-
-/* Download Resume Button */
-a.wtf {
-    display: inline-block;
-    margin: 20px 0px 40px 10%;
-    padding: 15px 30px 15px 20px;
-    color: var(--background-color);
-    font-size: 18px;
-    font-family: calibri;
-    font-weight: 300;
-    text-decoration: none;
-    background-color: var(--font-color);
-}
-
-a.wtf:hover {
-    background-color: white;
-}
-
-svg {
-    vertical-align: middle;
-    padding-bottom: 5px;
-    padding-right: 5px;
-    color: red;
-}
-
-
-/* collapsable containers */
+/* Collapsable Menu */
 .collapsible {
     background-color: var(--collapsible-head);
     font-weight: bold;
-    color: var(--font-color);
+    color: var(--accent-color);
     cursor: pointer;
     padding: 25px 30px 20px 30px;
     width: 100%;
     border: none;
-    text-align: left;
     outline: none;
     font-size: 16px;
+    text-align: left;
 }
 
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
     background-color: var(--collapsible-head);
 }
 
 .collapsible:after {
-    content: '\002B';
-    color: var(--font-color);
+    content: "\002B";
+    color: var(--accent-color);
     font-weight: 500;
     font-size: 20px;
     float: right;
@@ -221,22 +154,161 @@ svg {
 }
 
 .content {
-    color: var(--font-color);
-    padding: 0 30px;
+    padding: 0px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: var(--collapsible-body);
 }
 
-.content p, li{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.content p,
+li {
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-a.docLink{
+/*--------------------------*/
+/* SECTION content elements */
+/*--------------------------*/
+div.section {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    text-align: center;
+    padding: 50px var(--sect-padding-LR) 50px var(--sect-padding-LR);
+}
+
+div.b {
+    background-color: #171c1e;
     color: white;
+}
+
+div.c {
+    background-image: linear-gradient(
+            rgba(32, 39, 42, 0.85),
+            rgba(32, 39, 42, 0.85)
+        ),
+        url(projects.jpg);
+    background-attachment: fixed;
+    margin: 0px;
+    background-size: 100% 100%;
+    padding: 50px var(--sect-padding-LR) 50px var(--sect-padding-LR);
+}
+
+div.bgimage {
+    background-color: #171c1e;
+    width: 100%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: var(--readable-text);
+    padding: 50px var(--sect-padding-LR) 50px var(--sect-padding-LR);
+}
+
+/*-----------------------*/
+/* EXPERIENCE Grid Style */
+/*-----------------------*/
+.experience-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+div.experience-card {
+    width: 1fr;
+    font-size: 20px;
+}
+
+div.experience-card ul li {
+    font-family: var(--readable-text);
+}
+
+div.g {
+    text-align: left;
+}
+
+/*-----------------------*/
+/* PORTFOLIO Grid Styles */
+/*-----------------------*/
+.project-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+/* Project Card and Links */
+div.project_card {
+    position: relative;
+    background-color: var(--cards);
+    box-shadow:
+        rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    width: 1fr;
+    height: 90%;
+    margin: 0;
+    padding: 1em;
+    text-align: left;
+}
+
+div.project_card p {
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+a.docLink {
+    position: absolute;
+    bottom: 0.5em;
+    font-family: var(--readable-text);
+    margin: 0px 20px 20px 20px;
+    color: var(--accent-color);
 }
 
 a.docLink:visited {
-    color: white;
+    color: var(--accent-color);
+}
+
+/*------------------------*/
+/* Work History Styles    */
+/*------------------------*/
+
+div.work-history {
+    padding: 40px 20px 20px 20px;
+    border-radius: 15px;
+    background-color: #333e43;
+    line-height: 2em;
+    text-align: left;
+    margin: 20px 0px 20px 0px;
+    box-shadow:
+        rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+mark {
+    background-color: var(--accent-color);
+    font-weight: bold;
+}
+
+/*------------------------*/
+/* Download Resume Button */
+/*------------------------*/
+a.wtf {
+    display: inline-block;
+    border-radius: 5px;
+    margin: 40px 15px 40px 15px;
+    padding: 15px 25px 15px 25px;
+    color: var(--background-color);
+    font-size: 18px;
+    font-family: calibri;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: var(--accent-color);
+}
+
+a.wtf:hover {
+    background-color: white;
 }
