@@ -8,9 +8,9 @@
 
     /* Headings */
     --header1: 3rem;
-    --header2: 2.5rem;
-    --header3: 2rem;
-    --header4: ;
+    --header2: 2.8rem;
+    --header3: 1.2rem;
+    --header4: 1.2rem;
     --header5: ;
 
     /* Body Text */
@@ -60,7 +60,11 @@ h3,
 h4,
 h5 {
     color: var(--accent-color);
-    font-family: Impact;
+    font-family:
+        Garamond,
+        Georgia,
+        Times New Roman,
+        Impact;
     letter-spacing: 2px;
     font-weight: 400;
     padding: 20px 20px 20px 20px;
@@ -73,6 +77,14 @@ h1 {
 
 h2 {
     font-size: var(--header2);
+}
+
+h3 {
+    font-size: var(--header3);
+}
+
+h4 {
+    font-size: var(--header4);
 }
 
 p {
