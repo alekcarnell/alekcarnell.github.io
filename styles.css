@@ -274,7 +274,7 @@ div.project_card {
 }
 
 div.project_card p {
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     text-align: justify;
 }
 
@@ -312,32 +312,6 @@ div.cert img {
         rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-/*------------------------*/
-/* Work History Styles    */
-/*------------------------*/
-
-div.work-history {
-    padding: 40px 20px 20px 20px;
-    border-radius: 15px;
-    background-color: #333e43;
-    line-height: 2em;
-    text-align: left;
-    margin: 20px 0px 20px 0px;
-    box-shadow:
-        rgba(0, 0, 0, 0.19) 0px 10px 20px,
-        rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-div.work-history ul li {
-    color: white;
-    font-family: var(--readable-text);
-}
-
-mark {
-    background-color: var(--accent-color);
-    font-weight: bold;
-}
-
 /*-----------------------*/
 /* SKILLS Grid Styles */
 /*-----------------------*/
@@ -372,4 +346,80 @@ a.wtf {
 
 a.wtf:hover {
     background-color: white;
+}
+
+/*--------------------------*/
+/* Work History Card Slider */
+/*--------------------------*/
+/* Importing Google Font - Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+mark {
+    background-color: var(--accent-color);
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slider-wrapper {
+    display: flex;
+    overflow: hidden;
+    margin: 0 70px 55px;
+    text-align: left;
+    line-height: 2em;
+    padding: 20px 20px 20px 20px;
+}
+
+.slider-wrapper ul li {
+    color: white;
+    font-family: var(--readable-text);
+}
+
+.card-list .card-item {
+    height: auto;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #70828a;
+    background: #333e43;
+    box-shadow:
+        rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+    background: #fff;
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+}
+
+.slider-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.slider-wrapper .swiper-slide-button {
+    color: #fff;
+    margin-top: -55px;
+    transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+    color: #36e58a;
+}
+
+@media (max-width: 768px) {
+    .slider-wrapper {
+        margin: 0 10px 40px;
+    }
+
+    .slider-wrapper .swiper-slide-button {
+        display: none;
+    }
 }
