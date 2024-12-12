@@ -201,10 +201,10 @@ div.e {
 div.c {
     /* Set a slightly transparenet gradient over the background image to make it more attractive */
     background-image: linear-gradient(
-            rgba(32, 39, 42, 0.75),
-            rgba(32, 39, 42, 0.9)
+            rgba(32, 39, 42, 0.85),
+            rgba(32, 39, 42, 0.85)
         ),
-        url(projects.jpg);
+        url(project3.jpeg);
     background-attachment: fixed;
     margin: 0px;
     background-size: 100% 100%;
