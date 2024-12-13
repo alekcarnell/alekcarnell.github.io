@@ -5,16 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css" type="text/css"/>
         <!-- Linking SwiperJS CSS -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="slider_style.css" />
     </head>
 
     <body>
             <!--Row 1-->
-                <button class="collapsible">MENU</button>
+                <button class="collapsible">EXTERNAL PROFILES</button>
                 <div class="content">
                     <div class="menu">
                         <a href="https://profile.indeed.com/p/alekc-d0tegea" target="_blank">INDEED</a>
@@ -25,23 +22,26 @@
 
             <!--Row 2-->
                 <div class="section a">
-                    <h1>ALEK CARNELL</h1>
-                    <i>
-                        Computerphile and IT professional specializing in security and administration.
-                    </i>
-                    <p>Over the course of 6 years in Information Technology, I have worked across networking, hardware, operating systems, and development, focusing on security to mitigate risks and protect both individuals and organizations.</p>
-                    </br>
-                    <a class="wtf" href="https://drive.proton.me/urls/79HFK9VE0W#KWlWYSZINffo" target="_blank">Download Resume</a>
+                    <div class="profile-grid-wrapper">
+                        <div class="profile-card">
+                            <h1>ALEK CARNELL</h1>
+                            <i>
+                                Computerphile and IT professional specializing in security and administration.
+                            </i>
+                            <p>Over the course of 6 years in Information Technology, I have worked across networking, hardware, operating systems, and development, focusing on security to mitigate risks and protect both individuals and organizations.</p>
+                            </br>
+                            <a class="wtf" href="https://drive.proton.me/urls/79HFK9VE0W#KWlWYSZINffo" target="_blank">Download Resume</a>
+                        </div>
+                    </div>
                 </div>
 
 
             <!--Row 3-->
                 <div class="section b">
                     <h2>Experience</h2>
-
                     <div class="experience-grid-wrapper">
                         <div class="experience-card f">
-                            <img src="work-experience.png">
+                            <img class="profile" src="profile.jpg">
                         </div>
                         <div class="experience-card g">
                             <ul>
@@ -69,7 +69,7 @@
 
                         <div class="project_card">
                             <h3>Home Security Policy | DR and Continuity Planning</h3>
-                            <p>I created a Security Policy for my family and roommates that outlines protocols, tools, and procedures to ensure data confidentiality, integrity, and accessibility. It also includes a disaster recovery plan and addresses risks and trade-offs to help users make informed decisions within the overall security framework.</p>
+                            <p>I created a Security Policy for my household that outlines protocols, tools, and procedures to ensure data confidentiality, integrity, and accessibility. It also includes a disaster recovery plan and addresses risks and trade-offs to help users make informed decisions within the overall security framework.</p>
                             <a class="docLink" href="https://github.com/alekcarnell/Homelab-Documentation/blob/main/Personal%20and%20Home%20Network%20Cyber%20Security%20and%20Disaster%20Recovery%20Policy.md" target="_blank">Documentation</a>
                         </div>
 
@@ -174,13 +174,28 @@
                     <p></p>
                     <div class="cert-grid-wrapper">
                         <div class="cert">
-                            <img src="secplus.png">
+                            <div class="cssbox">
+                                <a id="image1" href="#image1"><img class="cssbox_thumb" src="secplus.png" />
+                                    <span class="cssbox_full"><img src="secplus.png" /></span>
+                                </a>
+                                <a class="cssbox_close" href="#void"></a>
+                            </div>
                         </div>
                         <div class="cert">
-                            <img src="hdicert.png">
+                            <div class="cssbox">
+                                <a id="image2" href="#image2"><img class="cssbox_thumb" src="hdicert.png" />
+                                    <span class="cssbox_full"><img src="hdicert.png" /></span>
+                                </a>
+                                <a class="cssbox_close" href="#void"></a>
+                            </div>
                         </div>
                         <div class="cert">
-                            <img src="sixsigma.png">
+                            <div class="cssbox">
+                                <a id="image3" href="#image3"><img class="cssbox_thumb" src="sixsigma.png" />
+                                    <span class="cssbox_full"><img src="sixsigma.png" /></span>
+                                </a>
+                                <a class="cssbox_close" href="#void"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -190,7 +205,7 @@
             <footer>
                 <a class="wtf" href="https://drive.proton.me/urls/YGPVDYVG8G#qSJyT37Wx054" target="_blank">Download Resume</a>
 
-                <p style="float: right;"> icons by ProSymbols Premium</p>
+                <p> icons by ProSymbols Premium</p>
             </footer>
 
         <!--Script that controls the collapsible navigation menu-->

@@ -5,6 +5,9 @@
     --collapsible-head: black;
     --cards: black;
     --accent-color: #36e58a;
+    /* green: #36e58a */
+    /* blue: #4decfa */
+    /* red: #ff5959 */
 
     /* Headings */
     --header1: 3rem;
@@ -194,7 +197,7 @@ div.b {
     color: white;
 }
 
-div.e {
+div.d {
     background-color: #171c1e;
 }
 
@@ -220,6 +223,31 @@ footer {
     color: white;
     font-family: var(--readable-text);
     padding: 50px var(--sect-padding-LR) 50px var(--sect-padding-LR);
+    text-align: center;
+}
+
+/*-----------------------*/
+/* PROFILE Grid Style */
+/*-----------------------*/
+.profile-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+}
+div.profile-card {
+    width: 1fr;
+    font-size: 20px;
+}
+
+img.profile {
+    height: 320px;
+    width: auto;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: var(--accent-color);
+    box-shadow: 0px 10px 40px black;
 }
 
 /*-----------------------*/
@@ -252,11 +280,6 @@ div.g {
     text-align: left;
 }
 
-div.experience-card img {
-    height: 250px;
-    width: auto;
-}
-
 @media (max-width: 420px) {
     div.f {
         display: none;
@@ -279,8 +302,8 @@ div.project_card {
     position: relative;
     background-color: var(--cards);
     box-shadow:
-        rgba(0, 0, 0, 0.19) 0px 10px 20px,
-        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        rgba(0, 0, 0, 0.25) 0px 10px 20px,
+        rgba(0, 0, 0, 0.35) 6px 6px 10px;
     border-radius: 10px;
     width: 1fr;
     height: 90%;
@@ -324,8 +347,8 @@ a.docLink:visited {
 div.cert img {
     width: 360px;
     box-shadow:
-        rgba(0, 0, 0, 0.19) 0px 10px 20px,
-        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        rgba(0, 0, 0, 0.9) 0px 0px 30px,
+        rgba(0, 0, 0, 0.9) 0px 6px 6px;
 }
 
 /*-----------------------*/
@@ -438,4 +461,86 @@ mark {
     .slider-wrapper .swiper-slide-button {
         display: none;
     }
+}
+
+/*--------------------------*/
+/* LIGHTBOX                 */
+/* Source code: https://github.com/TheLastProject/CSSBox/blob/master/cssbox.css */
+/*--------------------------*/
+div.cssbox {
+    display: inline-block;
+}
+
+span.cssbox_full {
+    z-index: 999999;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+    transition: opacity 0.5s linear;
+}
+
+span.cssbox_full img {
+    position: fixed;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+a.cssbox_close,
+a.cssbox_prev,
+a.cssbox_next {
+    z-index: 999999;
+    position: fixed;
+    text-decoration: none;
+    visibility: hidden;
+    color: white;
+    font-size: 36px;
+}
+
+a.cssbox_close {
+    top: 1%;
+    right: 1%;
+    color: var(--accent-color);
+}
+
+a.cssbox_close::after {
+    content: "\00d7";
+}
+
+a.cssbox_prev,
+a.cssbox_next {
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+a.cssbox_prev {
+    left: 5%;
+}
+
+a.cssbox_next {
+    right: 5%;
+}
+
+a:target ~ a.cssbox_close,
+a:target ~ a.cssbox_prev,
+a:target ~ a.cssbox_next {
+    visibility: visible;
+}
+
+a:target > img.cssbox_thumb + span.cssbox_full {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: initial;
 }
