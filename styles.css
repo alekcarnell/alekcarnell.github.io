@@ -204,8 +204,8 @@ div.d {
 div.c {
     /* Set a slightly transparenet gradient over the background image to make it more attractive */
     background-image: linear-gradient(
-            rgba(32, 39, 42, 0.85),
-            rgba(32, 39, 42, 0.85)
+            rgba(32, 39, 45, 0.75),
+            rgba(32, 39, 45, 0.75)
         ),
         url(project3.jpeg);
     background-attachment: fixed;
@@ -315,6 +315,10 @@ div.project_card {
 div.project_card p {
     margin-bottom: 70px;
     text-align: justify;
+}
+
+div.project_card:hover {
+    background-color: var(--background-color);
 }
 
 a.docLink {
