@@ -240,7 +240,6 @@ body {
     display: flex;
     justify-content: center;
     background: var(--dark-text);
-    
 }
 
 .content-section:nth-child(even) {
@@ -267,13 +266,27 @@ body {
     font-size: 1.4rem;
 }
 
+.section-desc b{
+    color: var(--dark-accent);
+}
+
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 30px;
     margin-top: 50px;
 }
+/* styles to make projects cards ustyled links */
+.grid a {
+    display: contents; /* prevents the link from shrinking the div height in the Grid */
+    text-decoration: none;
+}
 
+.grid a:visited {
+    display: contents; /* prevents the link from shrinking the div height in the Grid */
+    text-decoration: none;
+}
 
 
 /* ===== CARDS ===== */
@@ -282,7 +295,6 @@ body {
     padding: 40px;
     border-radius: 32px 12px 32px 12px;
     border: 0px solid rgb(21, 21, 21);
-    transition: all 0.3s ease;
 }
 
 .card h3 {
@@ -306,6 +318,73 @@ body {
     line-height: 1.7;
 }
 
+
+
+/* == work history cards == */
+.work{
+    background-color: var(--dark-text);
+}
+
+.work h3 {
+    color: var(--light-text);
+}
+
+.work h4 {
+    color: var(--dark-accent);
+}
+
+.work h5 {
+    color: #646464;
+}
+
+.work p {
+    color: var(--light-text);
+}
+
+
+
+/* == Portfolio Cards == */
+.project {
+    background: linear-gradient(135deg, rgb(60, 64, 58) 0%, rgb(46, 50, 44) 100%);
+}
+
+.project h3 {
+    color: var(--light-text);
+}
+
+.project h4 {
+    color: #7ec50b;
+}
+
+.project h5 {
+    color: #646464;
+}
+
+.project p {
+    color: rgba(224, 230, 237, 0.8);
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-flex; /*for keeping div width the same as text and easily flowing horizontally*/
+    background-color: var(--dark-accent);
+    color: var(--dark-text);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 0px 15px 0px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.grid a .card.project {
+    transition: all 0.3s ease !important; /* specifically only the transform property breaks unless !important is specified */
+}
+
+.grid a .card.project:hover {
+    transform: translateY(-10px) !important; /* specifically only the transform property breaks unless !important is specified */
+}
 
 
 /* === Certification Cards === */
@@ -344,73 +423,6 @@ body {
     color: var(--dark-accent);
 }
 
-
-
-/* == work history cards == */
-.work{
-    background-color: var(--dark-text);
-}
-
-.work h3 {
-    color: var(--light-text);
-}
-
-.work h4 {
-    color: var(--dark-accent);
-}
-
-.work h5 {
-    color: #646464;
-}
-
-.work p {
-    color: var(--light-text);
-}
-
-
-/* == Portfolio Cards == */
-.project {
-    background: linear-gradient(135deg, rgb(60, 64, 58) 0%, rgb(46, 50, 44) 100%);
-}
-
-.project h3 {
-    color: var(--light-text);
-}
-
-.project h4 {
-    color: #7ec50b;
-}
-
-.project h5 {
-    color: #646464;
-}
-
-.project p {
-    color: rgba(224, 230, 237, 0.8);
-    margin-bottom: 15px;
-}
-
-.tag {
-    display: inline-flex; /*for keeping div width the same as text and easily flowing horizontally*/
-    background-color: var(--dark-accent);
-    color: var(--dark-text);
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 1em;
-    padding: 0px 15px 0px 15px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.grid a {
-    display: contents; /* prevents the link from shrinking the div height in the Grid */
-    text-decoration: none;
-}
-
-.grid a:visited {
-    display: contents; /* prevents the link from shrinking the div height in the Grid */
-    text-decoration: none;
-}
 
 
 /* ===== MOBILE RESPONSIVENESS ===== */
