@@ -308,9 +308,8 @@ body {
 
 
 
-/* == Certification Cards == */
+/* === Certification Cards === */
 .cert {
-    border-left: 8px solid var(--light-accent);
     background-color: rgb(250, 255, 238);
     border-radius: 12px;
 }
@@ -319,12 +318,30 @@ body {
     color: #151515;
 }
 
-.cert h4 {
-    color: var(--light-accent);
-}
-
 .cert p {
     color: var(--dark-text);
+}
+
+/*ISC2*/
+.ISC2 {
+    border-left: 8px solid rgb(52, 110, 74);
+}
+.ISC2 h4{
+    color: rgb(52, 110, 74);
+}
+/*comptia*/
+.comptia {
+    border-left: 8px solid rgb(200, 16, 46);
+}
+.comptia h4{
+    color: rgb(200, 16, 46);
+}
+/*thm*/
+.thm {
+    border-left: 8px solid var(--dark-accent);
+}
+.thm h4{
+    color: var(--dark-accent);
 }
 
 
@@ -596,21 +613,21 @@ body {
 .wrapper .linkedin:hover,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
-    background: #1877f2;
+    background: rgb(10, 102, 194);
     color: #fff;
 }
 
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
-  background: #9b00cf;
+  background: #6e3182;
   color: #fff;
 }
 
 .wrapper .tryhackme:hover,
 .wrapper .tryhackme:hover .tooltip,
 .wrapper .tryhackme:hover .tooltip::before {
-  background: #17254c;
+  background: rgb(28, 37, 56);
   color: #fff;
 }
 
