@@ -1,9 +1,16 @@
 :root {
     /* Colors */
-    --light-text: #e0e6ed;
-    --dark-text: #151515;
-    --dark-accent: #7ec50b;
-    --light-accent: rgb(0, 170, 51);
+    --primary-dark: #151515;
+    --secondary-dark: #222222;
+    --primary-accent: #7ec50b;
+    --secondary-accent: #ECDFCC;
+
+    /* original palette 
+    --primary-dark: #151515;
+    --secondary-dark: #2a2a2a;
+    --primary-accent: #7ec50b;
+    --secondary-accent: #ECDFCC;
+    */
 }
 
 * {
@@ -15,7 +22,7 @@
 body {
     font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
     line-height: 1.6;
-    color: var(--light-text);
+    color: var(--secondary-accent);
     background-image: url(andrew-coelho-LUBvSohu6D0-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -44,7 +51,7 @@ body {
 }
 
 .navbar.scrolled {
-    background: var(--dark-text);
+    background: var(--primary-dark);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -61,7 +68,7 @@ body {
 .logo {
     font-size: 1.8em;
     font-weight: 700;
-    color: var(--light-text);
+    color: var(--secondary-accent);
     text-decoration: none;
     letter-spacing: 1px;
 }
@@ -73,7 +80,7 @@ body {
 }
 
 .nav-menu a {
-    color: var(--light-text);
+    color: var(--secondary-accent);
     text-decoration: none;
     font-weight: 500;
     font-size: 1.1em;
@@ -89,7 +96,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--light-text);
+    background: var(--secondary-accent);
     transition: width 0.3s ease;
 }
 
@@ -98,7 +105,7 @@ body {
 }
 
 .nav-menu a:hover {
-    color: var(--light-text);
+    color: var(--secondary-accent);
 }
 
 /* Mobile hamburger menu */
@@ -112,7 +119,7 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--light-text);
+    background: var(--secondary-accent);
     transition: all 0.3s ease;
     border-radius: 2px;
 }
@@ -176,7 +183,7 @@ body {
 
 .hero .subtitle {
     font-size: clamp(1.2rem, 3vw, 2rem);
-    color: var(--light-text);
+    color: var(--secondary-accent);
     text-shadow: 0 0 30px rgba(255, 255, 255, 0);
     margin-bottom: 15px;
     font-weight: 500;
@@ -224,8 +231,8 @@ body {
 }
 
 .cta-btn.primary {
-    background: linear-gradient(135deg, var(--dark-accent));
-    color: var(--dark-text);
+    background: linear-gradient(135deg, var(--primary-accent));
+    color: var(--primary-dark);
 }
 
 .cta-btn:hover {
@@ -239,11 +246,12 @@ body {
     padding: 100px 0;
     display: flex;
     justify-content: center;
-    background: var(--dark-text);
+    background: var(--primary-dark);
 }
 
 .content-section:nth-child(even) {
-    background: rgba(29, 29, 29, 1);
+    background-color: color-mix(in srgb, var(--secondary-dark) 50%, transparent);
+    backdrop-filter: blur(25px);
 }
 
 .section-container {
@@ -255,7 +263,7 @@ body {
 .section-title {
     font-size: clamp(2rem, 5vw, 3.5rem);
     text-align: center;
-    color: var(--light-text);
+    color: var(--secondary-accent);
     margin-bottom: 60px;
     font-weight: 300;
     position: relative;
@@ -267,7 +275,7 @@ body {
 }
 
 .section-desc b{
-    color: var(--dark-accent);
+    color: var(--primary-accent);
 }
 
 
@@ -298,7 +306,7 @@ body {
 }
 
 .card h3 {
-    color: var(--light-text);
+    color: var(--secondary-accent);
     margin-bottom: 15px;
     font-size: 1.4em;
 }
@@ -314,7 +322,6 @@ body {
 }
 
 .card p {
-    color: rgba(224, 230, 237, 0.8);
     line-height: 1.7;
 }
 
@@ -322,15 +329,15 @@ body {
 
 /* == work history cards == */
 .work{
-    background-color: var(--dark-text);
+    background-color: var(--primary-dark);
 }
 
 .work h3 {
-    color: var(--light-text);
+    color: var(--secondary-accent);
 }
 
 .work h4 {
-    color: var(--dark-accent);
+    color: var(--primary-accent);
 }
 
 .work h5 {
@@ -338,37 +345,33 @@ body {
 }
 
 .work p {
-    color: var(--light-text);
+    color: var(--secondary-accent);
 }
 
 
 
 /* == Portfolio Cards == */
 .project {
-    background: linear-gradient(135deg, rgb(60, 64, 58) 0%, rgb(46, 50, 44) 100%);
+    background: var(--secondary-dark)
 }
 
 .project h3 {
-    color: var(--light-text);
-}
-
-.project h4 {
-    color: #7ec50b;
+    color: var(--secondary-accent);
 }
 
 .project h5 {
-    color: #646464;
+    color: var(--secondary-dark);
 }
 
 .project p {
-    color: rgba(224, 230, 237, 0.8);
+    color: var(--secondary-accent);
     margin-bottom: 15px;
 }
 
 .tag {
     display: inline-flex; /*for keeping div width the same as text and easily flowing horizontally*/
-    background-color: var(--dark-accent);
-    color: var(--dark-text);
+    background-color: var(--primary-accent);
+    color: var(--primary-dark);
     border-radius: 20px;
     font-weight: 700;
     font-size: 1em;
@@ -389,7 +392,7 @@ body {
 
 /* === Certification Cards === */
 .cert {
-    background-color: rgb(250, 255, 238);
+    background-color: var(--secondary-accent);
     border-radius: 12px;
 }
 
@@ -398,7 +401,7 @@ body {
 }
 
 .cert p {
-    color: var(--dark-text);
+    color: var(--primary-dark);
 }
 
 /*ISC2*/
@@ -417,10 +420,10 @@ body {
 }
 /*thm*/
 .thm {
-    border-left: 8px solid var(--dark-accent);
+    border-left: 8px solid var(--primary-accent);
 }
 .thm h4{
-    color: var(--dark-accent);
+    color: var(--primary-accent);
 }
 
 
@@ -569,7 +572,7 @@ body {
 
 .wrapper .icon {
   position: relative;
-  background: #fff;
+  background: var(--secondary-accent);
   border-radius: 50%;
   margin: 10px;
   width: 50px;
@@ -588,7 +591,7 @@ body {
   position: absolute;
   top: 0;
   font-size: 14px;
-  background: #fff;
+  background: var(--secondary-accent);
   color: #fff;
   padding: 5px 8px;
   border-radius: 5px;
@@ -603,7 +606,7 @@ body {
   content: "";
   height: 8px;
   width: 8px;
-  background: #fff;
+  background: var(--secondary-accent);
   bottom: -3px;
   left: 50%;
   transform: translate(-50%) rotate(45deg);
