@@ -374,14 +374,6 @@
             observer.observe(card);
         });
 
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            }
-        });
-
         // Prevent body scroll when mobile menu is open
         const body = document.body;
         hamburger.addEventListener('click', () => {
@@ -390,6 +382,19 @@
             } else {
                 body.style.overflow = 'auto';
             }
+        });
+
+        // Close mobile menu and restore scrolling when clicking navigation links
+        const navLinks = document.querySelectorAll('.nav-menu a'); // Adjust selector as needed
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Close the mobile menu
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active'); // If you have an active class on hamburger
+                
+                // Restore body scrolling
+                body.style.overflow = 'auto';
+            });
         });
     </script>
 </body>
