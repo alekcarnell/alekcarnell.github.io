@@ -32,7 +32,7 @@
     <!-- Full-Screen Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <img class="profile" src="grayscale.jpg"/>
+            <img class="profile" src="grayscale-250.jpg"/>
             <p class="subtitle">Computerphile, Cybersecurity Specialist, and Privacy Advocate</p>
             <!--<p class="description">
                 Over 6 years of experience keeping information safe.
@@ -231,6 +231,35 @@
 
 
     <script>
+        // Background Image Network Optimizer
+        function loadOptimalBackground() {
+            const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    
+            let imageQuality = 'high'; // default
+    
+            if (connection) {
+                const effectiveType = connection.effectiveType;
+                const saveData = connection.saveData;
+                
+                if (saveData || effectiveType === 'slow-2g' || effectiveType === '2g') {
+                    imageQuality = 'low';
+                } else if (effectiveType === '4g') {
+                    imageQuality = 'high';
+                }
+            }
+            
+            const images = {
+                low: 'andrew-coelho-400.jpg',
+                medium: 'andrew-coelho-800.jpg',
+                high: 'andrew-coelho-1920.jpg'
+            };
+            
+            document.body.style.backgroundImage = `url(${images[imageQuality]})`;
+        }
+
+        loadOptimalBackground();
+
+
         // Mobile menu toggle
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('nav-menu');
