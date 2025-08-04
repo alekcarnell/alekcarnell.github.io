@@ -3,7 +3,7 @@
     --primary-dark: #151515;
     --secondary-dark: #222222;
     --primary-accent: #7ec50b;
-    --secondary-accent: #ECDFCC;
+    --secondary-accent: #fbf2e4;
 
     /* original palette 
     --primary-dark: #151515;
@@ -237,7 +237,6 @@ body {
 
 .cta-btn:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(20, 23, 18, 0.3);
 }
 
 /* ===== CONTENT SECTIONS (CENTERED WIDTH) ===== */
@@ -366,6 +365,13 @@ body {
 .project p {
     color: var(--secondary-accent);
     margin-bottom: 15px;
+}
+
+.project u {
+    font-weight: 700;
+    position: fixed;
+    bottom: 30px;
+    left: 40px;
 }
 
 .tag {
@@ -657,4 +663,47 @@ body {
 .wrapper a{
     margin-top: 8px;
     padding: 0px;
+}
+
+
+/* Custom content dividers */
+.custom-shape-divider-top-1754328460 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1754328460 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 33px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1754328460 .shape-fill {
+    fill: var(--primary-dark);
+}
+
+.custom-shape-divider-top-1754328546 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1754328546 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 33px;
+}
+
+.custom-shape-divider-top-1754328546 .shape-fill {
+    fill: var(--primary-dark);
 }
