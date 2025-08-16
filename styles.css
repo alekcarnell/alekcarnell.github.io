@@ -1,9 +1,9 @@
 :root {
     /* Colors */
-    --primary-dark: #151515;
-    --secondary-dark: #222222;
-    --primary-accent: #7ec50b;
-    --secondary-accent: #fbf2e4;
+    --primary-dark: rgb(21, 21, 21);
+    --secondary-dark: rgb(34, 34, 34);
+    --primary-accent: rgb(126, 197, 11);
+    --secondary-accent: rgb(251, 242, 228);
 
     /* original palette 
     --primary-dark: #151515;
@@ -23,117 +23,12 @@ body {
     font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
     line-height: 1.6;
     color: var(--secondary-accent);
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-color: black;
     overflow-x: hidden;
-}
-
-.profile {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-}
-
-/* ===== FULL-SCREEN NAVIGATION ===== */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    z-index: 1000;
-    transition: all 0.3s ease;
-}
-
-.navbar.scrolled {
-    background: var(--primary-dark);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-}
-
-.nav-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 40px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.8em;
-    font-weight: 700;
-    color: var(--secondary-accent);
-    text-decoration: none;
-    letter-spacing: 1px;
-}
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-}
-
-.nav-menu a {
-    color: var(--secondary-accent);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1em;
-    transition: all 0.3s ease;
-    position: relative;
-    padding: 10px 0;
-}
-
-.nav-menu a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--secondary-accent);
-    transition: width 0.3s ease;
-}
-
-.nav-menu a:hover::after {
-    width: 100%;
-}
-
-.nav-menu a:hover {
-    color: var(--secondary-accent);
-}
-
-/* Mobile hamburger menu */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 4px;
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background: var(--secondary-accent);
-    transition: all 0.3s ease;
-    border-radius: 2px;
-}
-
-.hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* ===== FULL-SCREEN HERO SECTION ===== */
@@ -211,6 +106,13 @@ body {
     }
 }
 
+.profile {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
 .cta-buttons {
     display: flex;
     gap: 20px;
@@ -239,333 +141,7 @@ body {
     transform: translateY(-5px);
 }
 
-/* ===== CONTENT SECTIONS (CENTERED WIDTH) ===== */
-.content-section {
-    width: 100%;
-    padding: 100px 0;
-    display: flex;
-    justify-content: center;
-    background: var(--primary-dark);
-}
-
-.content-section:nth-child(even) {
-    background-color: color-mix(in srgb, var(--secondary-dark) 50%, transparent);
-    backdrop-filter: blur(25px);
-}
-
-.section-container {
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 40px;
-}
-
-.section-title {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    text-align: center;
-    color: var(--secondary-accent);
-    margin-bottom: 60px;
-    font-weight: 300;
-    position: relative;
-}
-
-.section-desc {
-    text-align: center;
-    font-size: 1.4rem;
-}
-
-.section-desc b{
-    color: var(--primary-accent);
-}
-
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-}
-/* styles to make projects cards ustyled links */
-.grid a {
-    display: contents; /* prevents the link from shrinking the div height in the Grid */
-    text-decoration: none;
-}
-
-.grid a:visited {
-    display: contents; /* prevents the link from shrinking the div height in the Grid */
-    text-decoration: none;
-}
-
-
-/* ===== CARDS ===== */
-.card {
-    background: rgb(51, 55, 49);
-    padding: 40px;
-    border-radius: 32px 12px 32px 12px;
-    border: 0px solid rgb(21, 21, 21);
-}
-
-.card h3 {
-    color: var(--secondary-accent);
-    margin-bottom: 15px;
-    font-size: 1.4em;
-}
-
-.card h4 {
-    margin-bottom: 15px;
-    font-size: 1.2em;
-}
-
-.card h5 {  
-    margin-bottom: 15px;
-    font-size: 1.0em;
-}
-
-.card p {
-    line-height: 1.7;
-}
-
-
-
-/* == work history cards == */
-.work{
-    background-color: var(--primary-dark);
-}
-
-.work h3 {
-    color: var(--secondary-accent);
-}
-
-.work h4 {
-    color: var(--primary-accent);
-}
-
-.work h5 {
-    color: #646464;
-}
-
-.work p {
-    color: var(--secondary-accent);
-}
-
-
-
-/* == Portfolio Cards == */
-.project {
-    background: var(--secondary-dark)
-}
-
-.project h3 {
-    color: var(--secondary-accent);
-}
-
-.project h5 {
-    color: var(--secondary-dark);
-}
-
-.project p {
-    color: var(--secondary-accent);
-    margin-bottom: 15px;
-}
-
-.project u {
-    font-weight: 700;
-    position: fixed;
-    bottom: 30px;
-    left: 40px;
-}
-
-.tag {
-    display: inline-flex; /*for keeping div width the same as text and easily flowing horizontally*/
-    background-color: var(--primary-accent);
-    color: var(--primary-dark);
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 1em;
-    padding: 0px 15px 0px 15px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-
-.grid a .card.project {
-    transition: all 0.3s ease !important; /* specifically only the transform property breaks unless !important is specified */
-}
-
-.grid a .card.project:hover {
-    transform: translateY(-10px) !important; /* specifically only the transform property breaks unless !important is specified */
-}
-
-
-/* === Certification Cards === */
-.cert {
-    background-color: var(--secondary-accent);
-    border-radius: 12px;
-}
-
-.cert h3 {
-    color: #151515;
-}
-
-.cert p {
-    color: var(--primary-dark);
-}
-
-/*ISC2*/
-.ISC2 {
-    border-left: 8px solid rgb(52, 110, 74);
-}
-.ISC2 h4{
-    color: rgb(52, 110, 74);
-}
-/*comptia*/
-.comptia {
-    border-left: 8px solid rgb(200, 16, 46);
-}
-.comptia h4{
-    color: rgb(200, 16, 46);
-}
-/*thm*/
-.thm {
-    border-left: 8px solid var(--primary-accent);
-}
-.thm h4{
-    color: var(--primary-accent);
-}
-
-
-
-/* ===== MOBILE RESPONSIVENESS ===== */
-@media (max-width: 768px) {
-    .nav-container {
-        padding: 0 20px;
-    }
-
-    .nav-menu {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 80px);
-        background: var(--dark-text);
-        backdrop-filter: blur(20px);
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 30px;
-        padding-top: 50px;
-        transition: left 0.3s ease;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-menu a {
-        font-size: 1.3em;
-        padding: 15px 0;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .hero {
-        height: 100vh;
-        padding: 0 10px;
-    }
-
-    .hero-content {
-        padding: 0 10px;
-    }
-
-    .cta-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cta-btn {
-        width: 250px;
-        text-align: center;
-    }
-
-    .content-section {
-        padding: 60px 0;
-    }
-
-    .section-container {
-        padding: 0 20px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .card {
-        padding: 30px;
-    }
-}
-
-/* Small mobile devices */
-@media (max-width: 480px) {
-    .navbar {
-        height: 70px;
-    }
-
-    .nav-menu {
-        top: 70px;
-        height: calc(100vh - 70px);
-    }
-
-    .nav-container {
-        padding: 0 15px;
-    }
-
-    .logo {
-        font-size: 1.5em;
-    }
-
-    .section-container {
-        padding: 0 15px;
-    }
-
-    .card {
-        padding: 25px;
-    }
-}
-
-/* Large screens optimization */
-@media (min-width: 1400px) {
-    .hero-content {
-        max-width: 1000px;
-    }
-    
-    .section-container {
-        max-width: 1400px;
-    }
-}
-
-/* Scroll indicator */
-.scroll-indicator {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgba(224, 230, 237, 0.6);
-    font-size: 3em;
-    text-align: center;
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-    40% { transform: translateX(-50%) translateY(-10px); }
-    60% { transform: translateX(-50%) translateY(-5px); }
-}
-
-
-
-/* ==== Socials Flight ==== */
+/* Socials Flight */
 .wrapper {
   display: inline-flex;
   list-style: none;
@@ -663,6 +239,62 @@ body {
 .wrapper a{
     margin-top: 8px;
     padding: 0px;
+}
+
+
+/* ===== CONTENT SECTIONS (CENTERED WIDTH) ===== */
+.content-section {
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    background: var(--primary-dark);
+}
+
+.content-section:nth-child(even) {
+    background-color: color-mix(in srgb, var(--secondary-dark) 50%, transparent);
+    backdrop-filter: blur(25px);
+}
+
+.section-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-align: center;
+    color: var(--secondary-accent);
+    margin-bottom: 60px;
+    font-weight: 300;
+    position: relative;
+}
+
+.section-desc {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.section-desc b{
+    color: var(--primary-accent);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+/* styles to make projects cards ustyled links */
+.grid a {
+    display: contents; /* prevents the link from shrinking the div height in the Grid */
+    text-decoration: none;
+}
+
+.grid a:visited {
+    display: contents; /* prevents the link from shrinking the div height in the Grid */
+    text-decoration: none;
 }
 
 
