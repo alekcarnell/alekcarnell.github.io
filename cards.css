@@ -53,7 +53,7 @@
 
 /* == Portfolio Cards == */
 .project {
-    background: var(--secondary-dark)
+    background: var(--primary-dark)
 }
 
 .project h3 {
@@ -89,7 +89,7 @@
 
 .grid a .card.project:hover {
     transform: translateY(-10px) !important; /* specifically only the transform property breaks unless !important is specified */
-    background-color: color-mix(in srgb, var(--secondary-accent) 10%, transparent);
+    background-color: var(--secondary-dark);/* color-mix(in srgb, var(--secondary-accent) 10%, transparent); */
 }
 
 
