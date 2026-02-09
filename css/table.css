@@ -1,1 +1,36 @@
+table.w3-table-all {
+    margin-top: 20px;
+    border-collapse: collapse; /* This is key for single-pixel borders */
+    border-radius: 12px;       
+    
+    overflow: hidden;          /* Hide overflowing borders/backgrounds at corners */
+    width: 100%;      
+    animation: slideInUp 1s ease-out 0.2s both;         
+}
+
+.right_align {
+    text-align: right;      /*float does not work on table cells btw*/
+}
+
+.w3-table-all th, td {
+    padding: 6px;              
+    padding-left: 15px;        /* Applied to the cell instead of the text so wrapping is uniform */    
+}
+
+.w3-table-all tr:nth-child(odd) {
+  background-color: var(--primary-dark); /* A light gray color */
+}
+
+.w3-table-all tr:nth-child(even) {
+  background-color: var(--secondary-dark); /* White or another color */
+}
+
+.w3-table-all a , a:visited{
+    color: var(--secondary-accent);
+}
+
+.w3-table-all a:hover{
+    
+    color: var(--primary-accent);
+}
 

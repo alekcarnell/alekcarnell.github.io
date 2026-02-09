@@ -1,0 +1,129 @@
+/* ===== CARDS ===== */
+.card {
+    background: rgb(51, 55, 49);
+    padding: 40px;
+    border-radius: 32px 12px 32px 12px;
+    border: 0px solid rgb(21, 21, 21);
+}
+
+.card h3 {
+    color: var(--secondary-accent);
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.card h4 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.card h5 {  
+    margin-bottom: 15px;
+    font-size: 1.0em;
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+
+
+/* == work history cards == */
+.work{
+    background-color: var(--primary-dark);
+}
+
+.work h3 {
+    color: var(--secondary-accent);
+}
+
+.work h4 {
+    color: var(--primary-accent);
+}
+
+.work h5 {
+    color: #646464;
+}
+
+.work p {
+    color: var(--secondary-accent);
+}
+
+
+
+/* == Portfolio Cards == */
+.project {
+    background: var(--primary-dark)
+}
+
+.project h3 {
+    color: var(--secondary-accent);
+}
+
+.project h5 {
+    color: var(--secondary-dark);
+}
+
+.project p {
+    color: var(--secondary-accent);
+    margin-bottom: 15px;
+}
+
+
+.tag {
+    display: inline-flex; /*for keeping div width the same as text and easily flowing horizontally*/
+    background-color: var(--primary-accent);
+    color: var(--primary-dark);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 0px 15px 0px 15px;
+    margin: 10px 10px 10px 0px;
+}
+
+
+.grid a .card.project {
+    transition: all 0.3s ease !important; /* specifically only the transform property breaks unless !important is specified */
+}
+
+.grid a .card.project:hover {
+    transform: translateY(-10px) !important; /* specifically only the transform property breaks unless !important is specified */
+    background-color: var(--secondary-dark);/* color-mix(in srgb, var(--secondary-accent) 10%, transparent); */
+}
+
+
+/* === Certification Cards === */
+.cert {
+    background-color: var(--secondary-accent);
+    border-radius: 12px;
+}
+
+.cert h3 {
+    color: #151515;
+}
+
+.cert p {
+    color: var(--primary-dark);
+}
+
+/*ISC2*/
+.ISC2 {
+    border-left: 8px solid rgb(52, 110, 74);
+}
+.ISC2 h4{
+    color: rgb(52, 110, 74);
+}
+/*comptia*/
+.comptia {
+    border-left: 8px solid rgb(200, 16, 46);
+}
+.comptia h4{
+    color: rgb(200, 16, 46);
+}
+/*thm*/
+.thm {
+    border-left: 8px solid var(--primary-accent);
+}
+.thm h4{
+    color: var(--primary-accent);
+}
