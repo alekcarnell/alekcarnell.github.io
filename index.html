@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" type="text/css"/>
-    <link rel="stylesheet" href="navigation.css" type="text/css"/>
-    <link rel="stylesheet" href="cards.css" type="text/css"/>
-    <link rel="stylesheet" href="responsive.css" type="text/css"/>
+    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="css/navigation.css" type="text/css"/>
+    <link rel="stylesheet" href="css/cards.css" type="text/css"/>
+    <link rel="stylesheet" href="css/responsive.css" type="text/css"/>
+    <link rel="stylesheet" href="css/table.css" type="text/css"/>
     
     <title>Alek Carnell</title>
 </head>
@@ -35,7 +36,7 @@
     <!-- Full-Screen Hero Section -->
     <section class="hero" id="Home">
         <div class="hero-content">
-            <img class="profile" src="grayscale-250.jpg"/>
+            <img class="profile" src="images/grayscale-250.jpg"/>
             <p class="subtitle">Computerphile and Cybersecurity Specialist</p>
             <!--<p class="description">
                 Over 6 years of experience keeping information safe.
@@ -85,7 +86,7 @@
     <section class="content-section" id="About">
         <div class="section-container">
             <h2 class="section-title">About</h2>
-            <p class="section-desc">Cybersecurity and AI researcher with over 6 years of experience securing digital assets with specialization in <b>Identity Access Management</b>, <b>Data Protection</b>, and <b>Network Security</b></p>            
+            <p class="section-desc">Cybersecurity professional with over 6 years of experience securing digital assets with specialization in <b>Governance, Risk, & Compliance</b> and <b>Artifical Intelligence (LLMs)</b>.
         </div>
     </section>
     
@@ -126,7 +127,7 @@
                         </svg>
                     </h3>
                     <p>Outlines protocols, tools, and procedures to ensure data confidentiality, integrity, and accessibility. It also includes a disaster recovery plan and addresses risks and trade-offs to help users, and readers, make informed security-minded decisions.</p>
-                    <div class="tag">Documentation</div>
+                    <div class="tag">Policy</div>
                 </div>
                 </a>
 
@@ -143,49 +144,20 @@
                     <div class="tag">Documentation</div>
                 </div>
                 </a>
-
-                <a class="aproject" href="https://github.com/alekcarnell/writeups" target="_blank">
-                <div class="card project">
-                    <h3>CTF Write-Up / Diary
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fbf2e4" width="25px" height="25px" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve" stroke="#000000" stroke-width="0.0005200000000000001">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                            <g id="SVGRepo_iconCarrier"> <g> <path d="M48.7,2H29.6C28.8,2,28,2.5,28,3.3v3C28,7.1,28.7,8,29.6,8h7.9c0.9,0,1.4,1,0.7,1.6l-17,17 c-0.6,0.6-0.6,1.5,0,2.1l2.1,2.1c0.6,0.6,1.5,0.6,2.1,0l17-17c0.6-0.6,1.6-0.2,1.6,0.7v7.9c0,0.8,0.8,1.7,1.6,1.7h2.9 c0.8,0,1.5-0.9,1.5-1.7v-19C50,2.5,49.5,2,48.7,2z"/> <path d="M36.3,25.5L32.9,29c-0.6,0.6-0.9,1.3-0.9,2.1v11.4c0,0.8-0.7,1.5-1.5,1.5h-21C8.7,44,8,43.3,8,42.5v-21 C8,20.7,8.7,20,9.5,20H21c0.8,0,1.6-0.3,2.1-0.9l3.4-3.4c0.6-0.6,0.2-1.7-0.7-1.7H6c-2.2,0-4,1.8-4,4v28c0,2.2,1.8,4,4,4h28 c2.2,0,4-1.8,4-4V26.2C38,25.3,36.9,24.9,36.3,25.5z"/> </g> </g>
-                        </svg>
-                    </h3>
-                    <p>A growing collection of CTF challenges that I have completed that serve as write-ups for others, but also as a diary of how I thought through the challenges.</p>
-                    <div class="tag">Documentation</div>
-                </div>
-                </a>
-
-                <a class="aproject" href="https://github.com/alekcarnell/password_generation_tool/blob/main/passgentool.py" target="_blank">
-                <div class="card project">
-                    <h3>Password Generation Tool
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fbf2e4" width="25px" height="25px" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve" stroke="#000000" stroke-width="0.0005200000000000001">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                            <g id="SVGRepo_iconCarrier"> <g> <path d="M48.7,2H29.6C28.8,2,28,2.5,28,3.3v3C28,7.1,28.7,8,29.6,8h7.9c0.9,0,1.4,1,0.7,1.6l-17,17 c-0.6,0.6-0.6,1.5,0,2.1l2.1,2.1c0.6,0.6,1.5,0.6,2.1,0l17-17c0.6-0.6,1.6-0.2,1.6,0.7v7.9c0,0.8,0.8,1.7,1.6,1.7h2.9 c0.8,0,1.5-0.9,1.5-1.7v-19C50,2.5,49.5,2,48.7,2z"/> <path d="M36.3,25.5L32.9,29c-0.6,0.6-0.9,1.3-0.9,2.1v11.4c0,0.8-0.7,1.5-1.5,1.5h-21C8.7,44,8,43.3,8,42.5v-21 C8,20.7,8.7,20,9.5,20H21c0.8,0,1.6-0.3,2.1-0.9l3.4-3.4c0.6-0.6,0.2-1.7-0.7-1.7H6c-2.2,0-4,1.8-4,4v28c0,2.2,1.8,4,4,4h28 c2.2,0,4-1.8,4-4V26.2C38,25.3,36.9,24.9,36.3,25.5z"/> </g> </g>
-                        </svg>
-                    </h3>
-                    <p>Not robust enough to trust with generating passwords for your most important accounts, but the added Duplicate Detection feature helps highlight the importance of complexity and entropy when generating secure passwords.</p>
-                    <div class="tag">Python</div>
-                </div>
-                </a>
-
-                <a class="aproject" href="https://github.com/alekcarnell/whatsmyseed">
-                <div class="card project test">
-                    <h3>WhatsMySeed
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fbf2e4" width="25px" height="25px" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve" stroke="#000000" stroke-width="0.0005200000000000001">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                            <g id="SVGRepo_iconCarrier"> <g> <path d="M48.7,2H29.6C28.8,2,28,2.5,28,3.3v3C28,7.1,28.7,8,29.6,8h7.9c0.9,0,1.4,1,0.7,1.6l-17,17 c-0.6,0.6-0.6,1.5,0,2.1l2.1,2.1c0.6,0.6,1.5,0.6,2.1,0l17-17c0.6-0.6,1.6-0.2,1.6,0.7v7.9c0,0.8,0.8,1.7,1.6,1.7h2.9 c0.8,0,1.5-0.9,1.5-1.7v-19C50,2.5,49.5,2,48.7,2z"/> <path d="M36.3,25.5L32.9,29c-0.6,0.6-0.9,1.3-0.9,2.1v11.4c0,0.8-0.7,1.5-1.5,1.5h-21C8.7,44,8,43.3,8,42.5v-21 C8,20.7,8.7,20,9.5,20H21c0.8,0,1.6-0.3,2.1-0.9l3.4-3.4c0.6-0.6,0.2-1.7-0.7-1.7H6c-2.2,0-4,1.8-4,4v28c0,2.2,1.8,4,4,4h28 c2.2,0,4-1.8,4-4V26.2C38,25.3,36.9,24.9,36.3,25.5z"/> </g> </g>
-                        </svg>
-                    </h3>
-                    <p>WhatsMySeed is a program that initializes a hash of a known 12-word BIP39 seed phrase and then takes in 12 words as input and brute-forces all arrangements of those words against the known hash. Once it finds the correct order, it reads it back to the user.</p>
-                    <div class="tag">Python</div><div class="tag">Bitcoin</div>
-                </div>
-                </a>
+                
             </div>
+
+            <!--table for more projects-->
+            <table class="w3-table-all">
+                <tr><td><a href="https://github.com/alekcarnell/password_generation_tool" target="_blank">Password Generation Tool</a></td><td class="right_align"><div class="tag">Python</div></td></tr>
+                <tr><td><a href="https://github.com/alekcarnell/BankerAPI" target="_blank">Interest Rate API</a></td><td class="right_align"><div class="tag">Python</div><div class="tag">Finance</div></td></tr>
+                <tr><td><a href="https://github.com/alekcarnell/whatsmyseed" target="_blank">WhatsMySeed</a></td><td class="right_align"><div class="tag">Python</div><div class="tag">Bitcoin</div></td></tr>
+                <tr><td><a href="https://github.com/alekcarnell/writeups/blob/main/Overthewire%20-%20Bandit%20CTF%20Writeup.md" target="_blank">Overthewire write-up - Bandit</a></td><td class="right_align"><div class="tag">Documentation</div></td></tr>
+                <tr><td><a href="https://github.com/alekcarnell/writeups/blob/main/Overthewire%20-%20Natas%20CTF%20Writeup.md" target="_blank">Overthewire write-up - Natas</a></td><td class="right_align"><div class="tag">Documentation</div></td></tr>
+                <tr><td><a href="https://github.com/alekcarnell/writeups/blob/main/Lakera%20-%20Gandalf.md" target="_blank">Lakera write-up - Gandalf the White</a></td><td class="right_align"><div class="tag">Documentation</div></td></tr>
+                <tr><td><a href="https://github.com/alekcarnell/alekcarnell.github.io" target="_blank">My Resume Website Template</a></td><td class="right_align"><div class="tag">Web Dev</div></td></tr>
+            </table>
+            
         </div>
     </section>
 
@@ -261,9 +233,9 @@
             }
             
             const images = {
-                low: 'andrew-coelho-400.jpg',
-                medium: 'andrew-coelho-800.jpg',
-                high: 'andrew-coelho-1920.jpg'
+                low: 'images/andrew-coelho-400.jpg',
+                medium: 'images/andrew-coelho-800.jpg',
+                high: 'images/andrew-coelho-1920.jpg'
             };
             
             document.body.style.backgroundImage = `url(${images[imageQuality]})`;
