@@ -1,4 +1,4 @@
-## Introduction
+## Summary
 This is the template that I developed for my personal portfolio webpage. There were a few goals that I sought to accomplish with this template:
 
 1. The template should be lightweight and flexible, optimizing for accessibility on devices and different internet connections. 
