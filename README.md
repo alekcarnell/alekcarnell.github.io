@@ -1,5 +1,5 @@
-## Summary
-This is the template that I developed for my personal CV webpage. There were a few goals that I sought to accomplish with this template:
+## Introduction
+This is the template that I developed for my personal portfolio webpage. There were a few goals that I sought to accomplish with this template:
 
 1. The template should be lightweight and flexible, optimizing for accessibility on devices and different internet connections. 
 2. The template is a professional portfolio that communicates my experience and skills effectively. 
@@ -10,5 +10,9 @@ This is the template that I developed for my personal CV webpage. There were a f
 - Mobile-Responsive template.
 - Lightweight and fast. Includes network optimzed image loading.
 - Easy to configure color scheme.
+
+
+
+
 
 
