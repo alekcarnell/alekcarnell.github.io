@@ -80,6 +80,7 @@ p.subtitle {
     font-size: clamp(1.2rem, 3vw, 2rem);
     color: var(--secondary-accent);
     text-shadow: 0 0 30px rgba(255, 255, 255, 0);
+    margin-top: 50px;
     margin-bottom: 15px;
     font-weight: 500;
     animation: slideInUp 1s ease-out 0.2s both;
@@ -225,6 +226,13 @@ p.subtitle {
 .wrapper .tryhackme:hover .tooltip,
 .wrapper .tryhackme:hover .tooltip::before {
   background: rgb(28, 37, 56);
+  color: #fff;
+}
+
+.wrapper .x:hover,
+.wrapper .x:hover .tooltip,
+.wrapper .x:hover .tooltip::before {
+  background: rgb(0, 0, 0);
   color: #fff;
 }
 
