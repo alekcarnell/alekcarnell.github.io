@@ -1,9 +1,9 @@
 :root {
     /* Colors */
-    --primary-dark: rgb(21, 21, 21);
-    --secondary-dark: rgb(34, 34, 34);
-    --primary-accent: rgb(126, 197, 11);
-    --secondary-accent: rgb(251, 242, 228);
+    --primary-dark: rgb(0, 0, 0);
+    --secondary-dark: rgb(59, 59, 59);
+    --primary-accent: rgb(99, 157, 103);
+    --secondary-accent: rgb(255, 255, 255);
 
     /* original palette 
     --primary-dark: #151515;
